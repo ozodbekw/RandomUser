@@ -62,7 +62,9 @@ const updataUI = (data) => {
   <span>-${location.city} ${location.country}</span>
 </div>
 <div class="user__gender">
-  <span class="material-symbols-outlined">man</span>
+  <span class="material-symbols-outlined">${
+    gender === "male" ? "man" : "woman"
+  }</span>
   <span>- ${gender}</span>
 </div>
 </li>
